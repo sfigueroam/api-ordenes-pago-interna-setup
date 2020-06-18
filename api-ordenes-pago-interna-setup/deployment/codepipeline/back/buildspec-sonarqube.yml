@@ -1,0 +1,12 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - wget ${BUILD_SONARQUBE_URL_DESCARGA}
+      - unzip ${BUILD_SONARQUBE_NOMBRE_ARCHIVO}.zip
+      - echo "---------- PATH ---------"
+      - export myhome=`pwd`
+      - export PATH=$PATH:$myhome/${BUILD_SONARQUBE_NOMBRE_CARPETA}/bin
+      - echo "---------- SONAR ---------"
+      - sonar-scanner -Dsonar.projectKey=${BUILD_ENV}-back-${BUILD_APP_NAME} -Dsonar.sources=. -Dsonar.host.url=${BUILD_SONARQUBE_HOST} -Dsonar.login=${BUILD_SONARQUBE_LOGIN}
+

@@ -1,0 +1,21 @@
+{
+  "source": [
+    "aws.codecommit"
+  ],
+  "resources": [
+    "${repositoryArn}"
+  ],
+  "detail": {
+    "event": [
+      "referenceCreated",
+      "referenceUpdated"
+    ],
+    "referenceType": [
+      "branch"
+    ],
+    "referenceName": [
+      "${branchName}"
+    ]
+  }
+}
+

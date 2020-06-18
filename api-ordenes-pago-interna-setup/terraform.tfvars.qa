@@ -1,0 +1,8 @@
+account                 = "080540609156"
+env                     = "qa"
+apiName                 = "ordenes-pago-interna"
+apiKnownName            = "ordenes-pago-interna"
+apiDomainName           = "api-interna-qa.tegere.info"
+apiVersion              = "v1"
+cognitoPoolArn          = "arn:aws:cognito-idp:us-east-1:080540609156:userpool/us-east-1_sTLsK7nCU"
+cognitoPoolId           = "us-east-1_sTLsK7nCU"
